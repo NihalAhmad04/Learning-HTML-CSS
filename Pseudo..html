@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo and Selectors</title>
+    <style>
+      .btn:hover {
+        color: rgb(16, 104, 171);
+        background-color: cornflowerblue;
+        border: 2px solid blue;
+      }
+      a:hover {
+        color: rgb(33, 3, 3);
+        background-color: rgb(123, 200, 118);
+      }
+      a:visited {
+        background-color: yellow;
+      }
+      a:active {
+        background-color: rgb(50, 126, 226);
+      }
+      #cont1 {
+        border: 5px solid yellow;
+        background-color: rgb(92, 141, 184);
+        margin: 34px auto;
+        padding: 34px;
+        width: 666px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .btn {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: rgb(169, 65, 65);
+        padding: 6px;
+        border: none;
+        cursor: pointer;
+        font-size: 13px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containor" id="cont1">
+      <h3>this is my heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique quod
+        illum saepe placeat voluptatum, velit consequatur quo. Voluptas
+        temporibus itaque sint corrupti soluta, cumque, vel mollitia molestias
+        sit, ducimus reprehenderit!
+      </p>
+      <a href="https://facebook.com" target="_blank" class="btn">Read More</a>
+      <button class="btn">Contact Us</button>
+    </div>
+  </body>
+</html>

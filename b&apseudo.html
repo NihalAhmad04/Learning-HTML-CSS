@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After Pseudo Selectors</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px solid red; */
+        margin: 3px 125px;
+        height: 244px;
+        justify-content: center;
+      }
+      /* section::before{
+    content: "This is a Content"
+} */
+      body {
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(255, 255, 0);
+        color: #ffff;
+        background: url(https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+          no-repeat center center/cover;
+        /* z-index: -1; */
+        /* opacity: 0.5; */
+      }
+      /* header::before{
+      contain: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: url(https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat center center/cover;
+    } */
+      .navigation {
+        display: flex;
+        font-size: 20px;
+        font-family: "Baloo Bhaijaan 2", cursive;
+      }
+
+      li {
+        list-style: none;
+        padding: 20px 23px;
+      }
+      p {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-family: "Baloo Bhaijaan 2", cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li class="item">Home</li>
+          <li class="item">About</li>
+          <li class="item">Services</li>
+          <li class="item">Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h1>Welcome to Coding World</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+        sequi aut, asperiores possimus fugiat blanditiis consequatur porro,
+        quasi iusto veniam molestiae laudantium neque corrupti! Iusto asperiores
+        harum repellendus suscipit ea.
+      </p>
+    </section>
+    <hr />
+  </body>
+</html>

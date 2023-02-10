@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow And Text Shadwo</title>
+    <style>
+      .con {
+        display: flex;
+      }
+      .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid blue; */
+        background-color: burlywood;
+
+        /* ==> Box Shadow :offset-x offset-y (+,-) color;<== */
+        /* box-shadow: 12px 14px green; */
+        /* box-shadow: -12px -14px green; */
+
+        /* ==> Box Shadow :offset-x offset-y blur-radius color;<== */
+        box-shadow: 12px 14px 25px green;
+
+        /* ==> Box Shadow :offset-x offset-y blur-radius spread-radius color;<== */
+        /* box-shadow: 12px 14px 25px 12px green; */
+
+        /* ==> for giving rgba in color propertisc<== */
+        /* box-shadow: 12px 14px 25px 12px rgba(55, 55, 220, 0.5); */
+
+        /* ==> for giving inset in box shadwo<== */
+        /* box-shadow:inset 9px 9px green; */
+
+        /* ==> for giving multiply shadwo<== */
+        /* box-shadow: 9px 9px green,20px 20px red,30px 30px blue; */
+      }
+      .card h2 {
+        margin: "";
+        /* text-shadow:2px 1px rgb(255, 255, 255) ; */
+        /* text-shadow: 8px 10px 6px rgb(255, 255, 255) ; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <div class="card" id="card1">
+        <h2>This is CSS Course</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Necessitatibus corrupti velit et itaque inventore mollitia fugit ipsa,
+          ratione facilis adipisci dolorum sit provident aspernatur fugiat
+          vitae, ex commodi recusandae sequi ducimus quas, doloribus dolorem.
+        </p>
+      </div>
+      <div class="card" id="card2">
+        <h2>This is HTML Course</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Necessitatibus corrupti velit et itaque inventore mollitia fugit ipsa,
+          ratione facilis adipisci dolorum sit provident aspernatur fugiat
+          vitae, ex commodi recusandae sequi ducimus quas, doloribus dolorem.
+        </p>
+      </div>
+      <div class="card" id="card3">
+        <h2>Card3</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Necessitatibus corrupti velit et itaque inventore mollitia fugit ipsa,
+          ratione facilis adipisci dolorum sit provident aspernatur fugiat
+          vitae, ex commodi recusandae sequi ducimus quas, doloribus dolorem.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
